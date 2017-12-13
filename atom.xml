@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Devoutsin's Home]]></title>
+  
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://yoursite.com/"/>
+  <updated>2017-12-13T08:19:30.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name><![CDATA[John Doe]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[go-1.7版本崩溃问题]]></title>
+    <link href="http://yoursite.com/2017/12/13/go-1-7%E7%89%88%E6%9C%AC%E5%B4%A9%E6%BA%83%E9%97%AE%E9%A2%98/"/>
+    <id>http://yoursite.com/2017/12/13/go-1-7版本崩溃问题/</id>
+    <published>2017-12-13T08:15:07.000Z</published>
+    <updated>2017-12-13T08:19:30.000Z</updated>
+    <content type="html"><![CDATA[<p>#近期线上的一台机器突然挂掉，发现crash:fatal error: sweep increased allocation count<br>这是1.7版本存在的一个问题，参考: <a href="https://github.com/golang/go/issues/16778" target="_blank" rel="noopener">go</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>#近期线上的一台机器突然挂掉，发现crash:fatal error: sweep increased allocation count<br>这是1.7版本存在的一个问题，参考: <a href="https://github.com/golang/go/issues/1]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Devoutsin's Home]]></title>
+    <link href="http://yoursite.com/2016/12/01/Devoutsin-s-blog/"/>
+    <id>http://yoursite.com/2016/12/01/Devoutsin-s-blog/</id>
+    <published>2016-11-30T16:40:14.000Z</published>
+    <updated>2017-12-13T06:38:11.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="之前的博客迁移到这里"><a href="#之前的博客迁移到这里" class="headerlink" title="之前的博客迁移到这里"></a>之前的博客迁移到这里</h2>]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="之前的博客迁移到这里"><a href="#之前的博客迁移到这里" class="headerlink" title="之前的博客迁移到这里"></a>之前的博客迁移到这里</h2>]]>
+    </summary>
+    
+  </entry>
+  
+</feed>
