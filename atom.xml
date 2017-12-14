@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[De voutsin's Home]]></title>
+  <title><![CDATA[Devoutsin's Home]]></title>
   <subtitle><![CDATA[没有一只鸽子会因为翅膀不够坚强或者飞行姿势不够优美，而放弃整个蔚蓝的天空]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2017-12-13T09:09:36.000Z</updated>
+  <updated>2017-12-14T07:47:58.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,11 +19,11 @@
     <link href="http://yoursite.com/2017/12/13/go-1-7%E7%89%88%E6%9C%AC%E5%B4%A9%E6%BA%83%E9%97%AE%E9%A2%98/"/>
     <id>http://yoursite.com/2017/12/13/go-1-7版本崩溃问题/</id>
     <published>2017-12-13T08:15:07.000Z</published>
-    <updated>2017-12-13T09:09:36.000Z</updated>
-    <content type="html"><![CDATA[<p>#近期线上的一台机器突然挂掉，发现crash:fatal error: sweep increased allocation count<br>这是1.7版本存在的一个问题，参考: <a href="https://github.com/golang/go/issues/16778" target="_blank" rel="noopener">golang/go</a></p>
+    <updated>2017-12-14T07:47:58.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="近期线上的一台机器突然挂掉，发现crash-fatal-error-sweep-increased-allocation-count"><a href="#近期线上的一台机器突然挂掉，发现crash-fatal-error-sweep-increased-allocation-count" class="headerlink" title="近期线上的一台机器突然挂掉，发现crash:fatal error: sweep increased allocation count"></a>近期线上的一台机器突然挂掉，发现crash:fatal error: sweep increased allocation count</h2><p>这是1.7版本存在的一个问题，参考: <a href="https://github.com/golang/go/issues/16778" target="_blank" rel="noopener">golang/go</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>#近期线上的一台机器突然挂掉，发现crash:fatal error: sweep increased allocation count<br>这是1.7版本存在的一个问题，参考: <a href="https://github.com/golang/go/issues/1]]>
+    <![CDATA[<h2 id="近期线上的一台机器突然挂掉，发现crash-fatal-error-sweep-increased-allocation-count"><a href="#近期线上的一台机器突然挂掉，发现crash-fatal-error-sweep-increased-allo]]>
     </summary>
     
   </entry>
