@@ -73,18 +73,21 @@
 
 
 
-<meta name="description" content="erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,所以可以通过debug版本的beam反编译生成erl文件。 例如sum.beam是带debug编译好的beam文件，反编译步骤如下:{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).i">
+<meta name="description" content="make_jid的参数Item#roster.jid是一个&amp;#x3c;&amp;#x22;&amp;#x79;&amp;#x61;&amp;#x6e;&amp;#x67;&amp;#114;&amp;#x6f;&amp;#x6e;&amp;#x67;&amp;#64;&amp;#x6c;&amp;#111;&amp;#x63;&amp;#x61;&amp;#x6c;&amp;#104;&amp;#x6f;&amp;#x73;&amp;#x74;&amp;#x22;&amp;gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。">
 <meta name="keywords" content="erlang">
 <meta property="og:type" content="article">
-<meta property="og:title" content="erlang beam文件反编译成erl源文件">
-<meta property="og:url" content="http://yoursite.com/2015/05/07/erlang-beam反编译/index.html">
+<meta property="og:title" content="ejabberd删除好友bug">
+<meta property="og:url" content="http://yoursite.com/2014/06/10/ejabberd删除好友bug/index.html">
 <meta property="og:site_name" content="Devoutsin&#39;s Home">
-<meta property="og:description" content="erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,所以可以通过debug版本的beam反编译生成erl文件。 例如sum.beam是带debug编译好的beam文件，反编译步骤如下:{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).i">
+<meta property="og:description" content="make_jid的参数Item#roster.jid是一个&amp;#x3c;&amp;#x22;&amp;#x79;&amp;#x61;&amp;#x6e;&amp;#x67;&amp;#114;&amp;#x6f;&amp;#x6e;&amp;#x67;&amp;#64;&amp;#x6c;&amp;#111;&amp;#x63;&amp;#x61;&amp;#x6c;&amp;#104;&amp;#x6f;&amp;#x73;&amp;#x74;&amp;#x22;&amp;gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-16T14:07:02.000Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/YoungWing/YoungWing.github.io/master/2014/07/10/1111.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/YoungWing/YoungWing.github.io/master/2014/07/10/2222.png">
+<meta property="og:updated_time" content="2017-12-16T15:34:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="erlang beam文件反编译成erl源文件">
-<meta name="twitter:description" content="erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,所以可以通过debug版本的beam反编译生成erl文件。 例如sum.beam是带debug编译好的beam文件，反编译步骤如下:{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).i">
+<meta name="twitter:title" content="ejabberd删除好友bug">
+<meta name="twitter:description" content="make_jid的参数Item#roster.jid是一个&amp;#x3c;&amp;#x22;&amp;#x79;&amp;#x61;&amp;#x6e;&amp;#x67;&amp;#114;&amp;#x6f;&amp;#x6e;&amp;#x67;&amp;#64;&amp;#x6c;&amp;#111;&amp;#x63;&amp;#x61;&amp;#x6c;&amp;#104;&amp;#x6f;&amp;#x73;&amp;#x74;&amp;#x22;&amp;gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/YoungWing/YoungWing.github.io/master/2014/07/10/1111.png">
 
 
 
@@ -114,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2015/05/07/erlang-beam反编译/"/>
+  <link rel="canonical" href="http://yoursite.com/2014/06/10/ejabberd删除好友bug/"/>
 
 
 
 
 
-  <title>erlang beam文件反编译成erl源文件 | Devoutsin's Home</title>
+  <title>ejabberd删除好友bug | Devoutsin's Home</title>
   
 
 
@@ -247,7 +250,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/05/07/erlang-beam反编译/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2014/06/10/ejabberd删除好友bug/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Devoutsin">
@@ -264,7 +267,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">erlang beam文件反编译成erl源文件</h1>
+          <h1 class="post-title" itemprop="name headline">ejabberd删除好友bug</h1>
         
 
         <div class="post-meta">
@@ -276,8 +279,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-05-07T20:34:17+08:00">
-                2015-05-07
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2014-06-10T22:56:26+08:00">
+                2014-06-10
               </time>
             
 
@@ -336,10 +339,10 @@
       
 
       
-        <p>erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,<br>所以可以通过debug版本的beam反编译生成erl文件。</p>
-<p>例如sum.beam是带debug编译好的beam文件，反编译步骤如下:<br><code>{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).</code><br><code>io:fwrite(&quot;~s~n&quot;, [erl_prettypr:format(erl_syntax:form_list(Ac))]).</code><br>这样我们就得到的sum.beam的预处理之后的程序。<br> 如果我们想查看beam文件的汇编程序erts_debug:df(sum). 执行完毕会得到sum.dis文件，里面就是对应的汇编代码。</p>
-<p> 所以生成debug的beam文件是很不安全的，不过可以生成加密的debug信息，这样别人拿到这些beam也无法反编译生成erl文件<br> 方法：<br> 在rebar.config文件的debug_info中加上{debug_info_key,{des3_cbc,”your secret key”}编译选项</p>
-<p> <a href="http://erlang.org/doc/man/beam_lib.html" target="_blank" rel="noopener">参考erlang.org</a></p>
+        <p><img src="https://raw.githubusercontent.com/YoungWing/YoungWing.github.io/master/2014/07/10/1111.png" alt="ejabberd删除好友bug"></p>
+<p>make_jid的参数Item#roster.jid是一个<a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x3c;&#x22;&#x79;&#x61;&#x6e;&#x67;&#114;&#x6f;&#x6e;&#x67;&#64;&#x6c;&#111;&#x63;&#x61;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x22;">&#x3c;&#x22;&#x79;&#x61;&#x6e;&#x67;&#114;&#x6f;&#x6e;&#x67;&#64;&#x6c;&#111;&#x63;&#x61;&#x6c;&#104;&#x6f;&#x73;&#x74;&#x22;</a>&gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。</p>
+<p><img src="https://raw.githubusercontent.com/YoungWing/YoungWing.github.io/master/2014/07/10/2222.png" alt="ejabberd删除好友bug"></p>
+<p>这块取消订阅是有一方取消之后，双方关系都解除，之前测试只是谁取消订阅删除谁的记录，是因为这块bug引起的，导致unsubscribe消息没有推送出去，把这块代码注释掉是为了实现半删除。</p>
 
       
     </div>
@@ -370,8 +373,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2014/06/10/ejabberd删除好友bug/" rel="next" title="ejabberd删除好友bug">
-                <i class="fa fa-chevron-left"></i> ejabberd删除好友bug
+              <a href="/2013/05/01/Devoutsin-s-blog/" rel="next" title="Devoutsin's Home">
+                <i class="fa fa-chevron-left"></i> Devoutsin's Home
               </a>
             
           </div>
@@ -380,8 +383,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/05/16/gen-server模板/" rel="prev" title="gen_server模板">
-                gen_server模板 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/05/07/erlang-beam反编译/" rel="prev" title="erlang beam文件反编译成erl源文件">
+                erlang beam文件反编译成erl源文件 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
