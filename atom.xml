@@ -76,15 +76,15 @@
     <link href="http://yoursite.com/2014/06/10/ejabberd%E5%88%A0%E9%99%A4%E5%A5%BD%E5%8F%8Bbug/"/>
     <id>http://yoursite.com/2014/06/10/ejabberd删除好友bug/</id>
     <published>2014-06-10T14:56:26.000Z</published>
-    <updated>2017-12-16T15:34:59.000Z</updated>
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/YoungWing/YoungWing.github.io/master/2014/07/10/1111.png" alt="ejabberd删除好友bug"></p>
-<p>make_jid的参数Item#roster.jid是一个<a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#60;&#x22;&#121;&#x61;&#x6e;&#103;&#x72;&#x6f;&#x6e;&#103;&#64;&#x6c;&#111;&#99;&#x61;&#x6c;&#x68;&#x6f;&#x73;&#116;&#x22;">&#60;&#x22;&#121;&#x61;&#x6e;&#103;&#x72;&#x6f;&#x6e;&#103;&#64;&#x6c;&#111;&#99;&#x61;&#x6c;&#x68;&#x6f;&#x73;&#116;&#x22;</a>&gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。</p>
-<p><img src="https://raw.githubusercontent.com/YoungWing/YoungWing.github.io/master/2014/07/10/2222.png" alt="ejabberd删除好友bug"></p>
+    <updated>2017-12-16T15:49:07.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/YoungWing/myimg/master/1111.png" alt="ejabberd删除好友bug"></p>
+<p>make_jid的参数Item#roster.jid是一个<a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#x3a;&#60;&#x22;&#x79;&#x61;&#x6e;&#x67;&#x72;&#x6f;&#110;&#103;&#64;&#108;&#111;&#x63;&#97;&#108;&#104;&#111;&#x73;&#x74;&#34;">&#60;&#x22;&#x79;&#x61;&#x6e;&#x67;&#x72;&#x6f;&#110;&#103;&#64;&#108;&#111;&#x63;&#97;&#108;&#104;&#111;&#x73;&#x74;&#34;</a>&gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。</p>
+<p><img src="https://raw.githubusercontent.com/YoungWing/myimg/master/2222.png" alt="ejabberd删除好友bug"></p>
 <p>这块取消订阅是有一方取消之后，双方关系都解除，之前测试只是谁取消订阅删除谁的记录，是因为这块bug引起的，导致unsubscribe消息没有推送出去，把这块代码注释掉是为了实现半删除。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p><img src="https://raw.githubusercontent.com/YoungWing/YoungWing.github.io/master/2014/07/10/1111.png" alt="ejabberd删除好友bug"></p>
-<p>make_]]>
+    <![CDATA[<p><img src="https://raw.githubusercontent.com/YoungWing/myimg/master/1111.png" alt="ejabberd删除好友bug"></p>
+<p>make_jid的参数Item#roster.jid是一个<]]>
     </summary>
     
       <category term="erlang" scheme="http://yoursite.com/tags/erlang/"/>
