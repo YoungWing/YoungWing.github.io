@@ -50,13 +50,15 @@
     <link href="http://yoursite.com/2015/05/07/erlang-beam%E5%8F%8D%E7%BC%96%E8%AF%91/"/>
     <id>http://yoursite.com/2015/05/07/erlang-beam反编译/</id>
     <published>2015-05-07T12:34:17.000Z</published>
-    <updated>2017-12-16T13:53:39.000Z</updated>
-    <content type="html"><![CDATA[<p>erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,<br>所以可以通过debug版本的beam反编译生成erl文件</p>
+    <updated>2017-12-16T14:07:02.000Z</updated>
+    <content type="html"><![CDATA[<p>erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,<br>所以可以通过debug版本的beam反编译生成erl文件。</p>
 <p>例如sum.beam是带debug编译好的beam文件，反编译步骤如下:<br><code>{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).</code><br><code>io:fwrite(&quot;~s~n&quot;, [erl_prettypr:format(erl_syntax:form_list(Ac))]).</code><br>这样我们就得到的sum.beam的预处理之后的程序。<br> 如果我们想查看beam文件的汇编程序erts_debug:df(sum). 执行完毕会得到sum.dis文件，里面就是对应的汇编代码。</p>
+<p> 所以生成debug的beam文件是很不安全的，不过可以生成加密的debug信息，这样别人拿到这些beam也无法反编译生成erl文件<br> 方法：<br> 在rebar.config文件的debug_info中加上{debug_info_key,{des3_cbc,”your secret key”}编译选项</p>
+<p> <a href="http://erlang.org/doc/man/beam_lib.html" target="_blank" rel="noopener">参考erlang.org</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,<br>所以可以通过debug版本的beam反编译生成erl文件</p>
-<p>例如sum.beam是带debug编译好的beam文件，反编译步骤如下:<br><code>{ok, {_,]]>
+    <![CDATA[<p>erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,<br>所以可以通过debug版本的beam反编译生成erl文件。</p>
+<p>例如sum.beam是带debug编译好的beam文件，反编译步骤如下:<br><code>{ok, {_]]>
     </summary>
     
       <category term="erlang" scheme="http://yoursite.com/tags/erlang/"/>
