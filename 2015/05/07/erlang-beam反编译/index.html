@@ -73,18 +73,18 @@
 
 
 
-<meta name="description" content="erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,所以可以通过debug版本的beam反编译生成erl文件 例如sum.beam是带debug编译好的beam文件，反编译步骤如下:{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]). i">
+<meta name="description" content="erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,所以可以通过debug版本的beam反编译生成erl文件 例如sum.beam是带debug编译好的beam文件，反编译步骤如下:{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).io">
 <meta name="keywords" content="erlang">
 <meta property="og:type" content="article">
 <meta property="og:title" content="erlang beam反编译">
 <meta property="og:url" content="http://yoursite.com/2015/05/07/erlang-beam反编译/index.html">
 <meta property="og:site_name" content="Devoutsin&#39;s Home">
-<meta property="og:description" content="erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,所以可以通过debug版本的beam反编译生成erl文件 例如sum.beam是带debug编译好的beam文件，反编译步骤如下:{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]). i">
+<meta property="og:description" content="erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,所以可以通过debug版本的beam反编译生成erl文件 例如sum.beam是带debug编译好的beam文件，反编译步骤如下:{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).io">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-16T13:50:32.000Z">
+<meta property="og:updated_time" content="2017-12-16T13:52:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="erlang beam反编译">
-<meta name="twitter:description" content="erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,所以可以通过debug版本的beam反编译生成erl文件 例如sum.beam是带debug编译好的beam文件，反编译步骤如下:{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]). i">
+<meta name="twitter:description" content="erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,所以可以通过debug版本的beam反编译生成erl文件 例如sum.beam是带debug编译好的beam文件，反编译步骤如下:{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).io">
 
 
 
@@ -337,8 +337,7 @@
 
       
         <p>erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,<br>所以可以通过debug版本的beam反编译生成erl文件</p>
-<p>例如sum.beam是带debug编译好的beam文件，反编译步骤如下:<br><code>{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).
-io:fwrite(&quot;~s~n&quot;, [erl_prettypr:format(erl_syntax:form_list(Ac))]).</code><br>这样我们就得到的sum.beam的预处理之后的程序。<br> 如果我们想查看beam文件的汇编程序erts_debug:df(sum). 执行完毕会得到sum.dis文件，里面就是对应的汇编代码。</p>
+<p>例如sum.beam是带debug编译好的beam文件，反编译步骤如下:<br><code>{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).</code><br><code>io:fwrite(&quot;~s~n&quot;, [erl_prettypr:format(erl_syntax:form_list(Ac))]).</code><br>这样我们就得到的sum.beam的预处理之后的程序。<br> 如果我们想查看beam文件的汇编程序erts_debug:df(sum). 执行完毕会得到sum.dis文件，里面就是对应的汇编代码。</p>
 
       
     </div>
