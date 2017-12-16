@@ -4,7 +4,7 @@
   <subtitle><![CDATA[你强任你强，我是Nick Young]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2017-12-16T10:55:06.000Z</updated>
+  <updated>2017-12-16T13:48:33.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -13,6 +13,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[erlang beam反编译]]></title>
+    <link href="http://yoursite.com/2017/12/15/erlang-beam%E5%8F%8D%E7%BC%96%E8%AF%91/"/>
+    <id>http://yoursite.com/2017/12/15/erlang-beam反编译/</id>
+    <published>2017-12-15T12:34:17.000Z</published>
+    <updated>2017-12-16T13:48:33.000Z</updated>
+    <content type="html"><![CDATA[<p>erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,<br>所以可以通过debug版本的beam反编译生成erl文件</p>
+<p>例如sum.beam是带debug编译好的beam文件，反编译步骤如下:<br><code>{ok, {_, [{abstract_code, {_, Ac}}]}} = beam_lib:chunks(code:which(sum), [abstract_code]).
+io:fwrite(&quot;~s~n&quot;, [erl_prettypr:format(erl_syntax:form_list(Ac))]).</code><br>这样我们就得到的sum.beam的预处理之后的程序。<br> 如果我们想查看beam文件的汇编程序erts_debug:df(sum). 执行完毕会得到sum.dis文件，里面就是对应的汇编代码。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>erlc带debug_info参数编译erl文件生成beam里面包含了debug信息,<br>所以可以通过debug版本的beam反编译生成erl文件</p>
+<p>例如sum.beam是带debug编译好的beam文件，反编译步骤如下:<br><code>{ok, {_,]]>
+    </summary>
+    
+      <category term="erlang" scheme="http://yoursite.com/tags/erlang/"/>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[go-1.7版本崩溃问题]]></title>

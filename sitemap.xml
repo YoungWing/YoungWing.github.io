@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/12/15/erlang-beam%E5%8F%8D%E7%BC%96%E8%AF%91/</loc>
+    
+    <lastmod>2017-12-16T13:48:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2017-12-16T13:12:50.000Z</lastmod>
