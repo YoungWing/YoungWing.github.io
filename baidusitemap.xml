@@ -4,8 +4,48 @@
 
     
   <url>
+    <loc>http://yoursite.com/2015/05/16/gen-server%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2017-12-16T15:12:29.000Z</lastmod>
+    <data>
+        <display>
+        <title>gen_server模板</title>
+        <pubTime>2015-05-16T11:44:45.000Z</pubTime>
+        
+        <tag>erlang</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2014/07/10/ejabberd%E5%88%A0%E9%99%A4%E5%A5%BD%E5%8F%8Bbug/</loc>
+    <lastmod>2017-12-16T15:10:33.000Z</lastmod>
+    <data>
+        <display>
+        <title>ejabberd删除好友bug</title>
+        <pubTime>2014-07-10T14:56:26.000Z</pubTime>
+        
+        <tag>erlang</tag>
+         
+         
+           
+             
+              <breadCrumb title="技术" url="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2013/05/01/Devoutsin-s-blog/</loc>
-    <lastmod>2017-12-16T14:10:59.000Z</lastmod>
+    <lastmod>2017-12-16T14:17:03.000Z</lastmod>
     <data>
         <display>
         <title>Devoutsin's Home</title>

@@ -33,6 +33,23 @@
   </entry>
   
   <entry>
+    <title><![CDATA[gen_server模板]]></title>
+    <link href="http://yoursite.com/2015/05/16/gen-server%E6%A8%A1%E6%9D%BF/"/>
+    <id>http://yoursite.com/2015/05/16/gen-server模板/</id>
+    <published>2015-05-16T11:44:45.000Z</published>
+    <updated>2017-12-16T15:12:29.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="gen-server代码模板"><a href="#gen-server代码模板" class="headerlink" title="gen_server代码模板"></a>gen_server代码模板</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line">%% gen_server代码模板</span><br><span class="line">-module(new_file).</span><br><span class="line"></span><br><span class="line">-behaviour(gen_server).</span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">% Include files</span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line"></span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">% External exports</span><br><span class="line">-export([]).</span><br><span class="line"></span><br><span class="line">% gen_server callbacks</span><br><span class="line">-export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).</span><br><span class="line"></span><br><span class="line">-record(state, &#123;&#125;).</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">% Function: init/1</span><br><span class="line">% Description: Initiates the server</span><br><span class="line">% Returns: &#123;ok, State&#125;          |</span><br><span class="line">%          &#123;ok, State, Timeout&#125; |</span><br><span class="line">%          ignore               |</span><br><span class="line">%          &#123;stop, Reason&#125;</span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">init([]) -&gt;</span><br><span class="line">    &#123;ok, #state&#123;&#125;&#125;.</span><br><span class="line"></span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">% Function: handle_call/3</span><br><span class="line">% Description: Handling call messages</span><br><span class="line">% Returns: &#123;reply, Reply, State&#125;          |</span><br><span class="line">%          &#123;reply, Reply, State, Timeout&#125; |</span><br><span class="line">%          &#123;noreply, State&#125;               |</span><br><span class="line">%          &#123;noreply, State, Timeout&#125;      |</span><br><span class="line">%          &#123;stop, Reason, Reply, State&#125;   | (terminate/2 is called)</span><br><span class="line">%          &#123;stop, Reason, State&#125;            (terminate/2 is called)</span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">handle_call(Request, From, State) -&gt;</span><br><span class="line">    Reply = ok,</span><br><span class="line">    &#123;reply, Reply, State&#125;.</span><br><span class="line"></span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">% Function: handle_cast/2</span><br><span class="line">% Description: Handling cast messages</span><br><span class="line">% Returns: &#123;noreply, State&#125;          |</span><br><span class="line">%          &#123;noreply, State, Timeout&#125; |</span><br><span class="line">%          &#123;stop, Reason, State&#125;            (terminate/2 is called)</span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">handle_cast(Msg, State) -&gt;</span><br><span class="line">    &#123;noreply, State&#125;.</span><br><span class="line"></span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">% Function: handle_info/2</span><br><span class="line">% Description: Handling all non call/cast messages</span><br><span class="line">% Returns: &#123;noreply, State&#125;          |</span><br><span class="line">%          &#123;noreply, State, Timeout&#125; |</span><br><span class="line">%          &#123;stop, Reason, State&#125;            (terminate/2 is called)</span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">handle_info(Info, State) -&gt;</span><br><span class="line">    &#123;noreply, State&#125;.</span><br><span class="line"></span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">% Function: terminate/2</span><br><span class="line">% Description: Shutdown the server</span><br><span class="line">% Returns: any (ignored by gen_server)</span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">terminate(Reason, State) -&gt;</span><br><span class="line">    ok.</span><br><span class="line"></span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">% Func: code_change/3</span><br><span class="line">% Purpose: Convert process state when code is changed</span><br><span class="line">% Returns: &#123;ok, NewState&#125;</span><br><span class="line">% --------------------------------------------------------------------</span><br><span class="line">code_change(OldVsn, State, Extra) -&gt;</span><br><span class="line">    &#123;ok, State&#125;.</span><br></pre></td></tr></table></figure>]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="gen-server代码模板"><a href="#gen-server代码模板" class="headerlink" title="gen_server代码模板"></a>gen_server代码模板</h2><figure class="highlight ]]>
+    </summary>
+    
+      <category term="erlang" scheme="http://yoursite.com/tags/erlang/"/>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[erlang beam文件反编译成erl源文件]]></title>
     <link href="http://yoursite.com/2015/05/07/erlang-beam%E5%8F%8D%E7%BC%96%E8%AF%91/"/>
     <id>http://yoursite.com/2015/05/07/erlang-beam反编译/</id>
@@ -55,14 +72,35 @@
   </entry>
   
   <entry>
+    <title><![CDATA[ejabberd删除好友bug]]></title>
+    <link href="http://yoursite.com/2014/07/10/ejabberd%E5%88%A0%E9%99%A4%E5%A5%BD%E5%8F%8Bbug/"/>
+    <id>http://yoursite.com/2014/07/10/ejabberd删除好友bug/</id>
+    <published>2014-07-10T14:56:26.000Z</published>
+    <updated>2017-12-16T15:10:33.000Z</updated>
+    <content type="html"><![CDATA[<p><img src="/Users/yangrong/Desktop/1111.png" alt="ejabberd删除好友bug"></p>
+<p>make_jid的参数Item#roster.jid是一个<a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;&#58;&#x3c;&#x22;&#x79;&#97;&#110;&#x67;&#x72;&#111;&#110;&#103;&#64;&#x6c;&#111;&#x63;&#97;&#108;&#x68;&#111;&#115;&#116;&#34;">&#x3c;&#x22;&#x79;&#97;&#110;&#x67;&#x72;&#111;&#110;&#103;&#64;&#x6c;&#111;&#x63;&#97;&#108;&#x68;&#111;&#115;&#116;&#34;</a>&gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。</p>
+<p><img src="/Users/yangrong/Desktop/2222.png" alt="ejabberd删除好友bug"><br>这块取消订阅是有一方取消之后，双方关系都解除，之前测试只是谁取消订阅删除谁的记录，是因为这块bug引起的，导致unsubscribe消息没有推送出去，把这块代码注释掉是为了实现半删除。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/Users/yangrong/Desktop/1111.png" alt="ejabberd删除好友bug"></p>
+<p>make_jid的参数Item#roster.jid是一个<a href="&#109;&#97;&#105;&#x6c;&#]]>
+    </summary>
+    
+      <category term="erlang" scheme="http://yoursite.com/tags/erlang/"/>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Devoutsin's Home]]></title>
     <link href="http://yoursite.com/2013/05/01/Devoutsin-s-blog/"/>
     <id>http://yoursite.com/2013/05/01/Devoutsin-s-blog/</id>
     <published>2013-04-30T16:40:14.000Z</published>
-    <updated>2017-12-16T14:10:59.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="之前的东西迁移到这里"><a href="#之前的东西迁移到这里" class="headerlink" title="之前的东西迁移到这里"></a>之前的东西迁移到这里</h2>]]></content>
+    <updated>2017-12-16T14:17:03.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="我会喜欢这里"><a href="#我会喜欢这里" class="headerlink" title="我会喜欢这里"></a>我会喜欢这里</h2>]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="之前的东西迁移到这里"><a href="#之前的东西迁移到这里" class="headerlink" title="之前的东西迁移到这里"></a>之前的东西迁移到这里</h2>]]>
+    <![CDATA[<h2 id="我会喜欢这里"><a href="#我会喜欢这里" class="headerlink" title="我会喜欢这里"></a>我会喜欢这里</h2>]]>
     </summary>
     
   </entry>
