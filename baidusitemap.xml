@@ -5,10 +5,10 @@
     
   <url>
     <loc>http://yoursite.com/2015/05/07/erlang-beam%E5%8F%8D%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2017-12-16T13:52:24.000Z</lastmod>
+    <lastmod>2017-12-16T13:53:39.000Z</lastmod>
     <data>
         <display>
-        <title>erlang beam反编译</title>
+        <title>erlang beam文件反编译成erl源文件</title>
         <pubTime>2015-05-07T12:34:17.000Z</pubTime>
         
         <tag>erlang</tag>
