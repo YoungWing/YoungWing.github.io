@@ -73,20 +73,20 @@
 
 
 
-<meta name="description" content="make_jid的参数Item#roster.jid是一个&amp;#60;&amp;#x22;&amp;#x79;&amp;#x61;&amp;#110;&amp;#x67;&amp;#114;&amp;#111;&amp;#110;&amp;#103;&amp;#64;&amp;#x6c;&amp;#x6f;&amp;#99;&amp;#x61;&amp;#x6c;&amp;#x68;&amp;#111;&amp;#115;&amp;#116;&amp;#34;&amp;gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。  这块">
+<meta name="description" content="make_jid的参数Item#roster.jid是一个&amp;#60;&amp;#x22;&amp;#121;&amp;#97;&amp;#x6e;&amp;#x67;&amp;#x72;&amp;#x6f;&amp;#110;&amp;#x67;&amp;#64;&amp;#108;&amp;#111;&amp;#99;&amp;#x61;&amp;#108;&amp;#x68;&amp;#111;&amp;#x73;&amp;#x74;&amp;#x22;&amp;gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。  这块">
 <meta name="keywords" content="erlang">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ejabberd删除好友bug">
 <meta property="og:url" content="http://yoursite.com/2014/06/10/ejabberd删除好友bug/index.html">
 <meta property="og:site_name" content="Devoutsin&#39;s Home">
-<meta property="og:description" content="make_jid的参数Item#roster.jid是一个&amp;#60;&amp;#x22;&amp;#x79;&amp;#x61;&amp;#110;&amp;#x67;&amp;#114;&amp;#111;&amp;#110;&amp;#103;&amp;#64;&amp;#x6c;&amp;#x6f;&amp;#99;&amp;#x61;&amp;#x6c;&amp;#x68;&amp;#111;&amp;#115;&amp;#116;&amp;#34;&amp;gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。  这块">
+<meta property="og:description" content="make_jid的参数Item#roster.jid是一个&amp;#60;&amp;#x22;&amp;#121;&amp;#97;&amp;#x6e;&amp;#x67;&amp;#x72;&amp;#x6f;&amp;#110;&amp;#x67;&amp;#64;&amp;#108;&amp;#111;&amp;#99;&amp;#x61;&amp;#108;&amp;#x68;&amp;#111;&amp;#x73;&amp;#x74;&amp;#x22;&amp;gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。  这块">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/YoungWing/myimg/master/1111.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/YoungWing/myimg/master/2222.png">
 <meta property="og:updated_time" content="2017-12-16T15:49:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ejabberd删除好友bug">
-<meta name="twitter:description" content="make_jid的参数Item#roster.jid是一个&amp;#60;&amp;#x22;&amp;#x79;&amp;#x61;&amp;#110;&amp;#x67;&amp;#114;&amp;#111;&amp;#110;&amp;#103;&amp;#64;&amp;#x6c;&amp;#x6f;&amp;#99;&amp;#x61;&amp;#x6c;&amp;#x68;&amp;#111;&amp;#115;&amp;#116;&amp;#34;&amp;gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。  这块">
+<meta name="twitter:description" content="make_jid的参数Item#roster.jid是一个&amp;#60;&amp;#x22;&amp;#121;&amp;#97;&amp;#x6e;&amp;#x67;&amp;#x72;&amp;#x6f;&amp;#110;&amp;#x67;&amp;#64;&amp;#108;&amp;#111;&amp;#99;&amp;#x61;&amp;#108;&amp;#x68;&amp;#111;&amp;#x73;&amp;#x74;&amp;#x22;&amp;gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。  这块">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/YoungWing/myimg/master/1111.png">
 
 
@@ -340,7 +340,7 @@
 
       
         <p><img src="https://raw.githubusercontent.com/YoungWing/myimg/master/1111.png" alt="ejabberd删除好友bug"></p>
-<p>make_jid的参数Item#roster.jid是一个<a href="&#109;&#97;&#105;&#x6c;&#116;&#111;&#58;&#60;&#x22;&#x79;&#x61;&#110;&#x67;&#114;&#111;&#110;&#103;&#64;&#x6c;&#x6f;&#99;&#x61;&#x6c;&#x68;&#111;&#115;&#116;&#34;">&#60;&#x22;&#x79;&#x61;&#110;&#x67;&#114;&#111;&#110;&#103;&#64;&#x6c;&#x6f;&#99;&#x61;&#x6c;&#x68;&#111;&#115;&#116;&#34;</a>&gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。</p>
+<p>make_jid的参数Item#roster.jid是一个<a href="&#x6d;&#x61;&#105;&#x6c;&#x74;&#x6f;&#x3a;&#60;&#x22;&#121;&#97;&#x6e;&#x67;&#x72;&#x6f;&#110;&#x67;&#64;&#108;&#111;&#99;&#x61;&#108;&#x68;&#111;&#x73;&#x74;&#x22;">&#60;&#x22;&#121;&#97;&#x6e;&#x67;&#x72;&#x6f;&#110;&#x67;&#64;&#108;&#111;&#99;&#x61;&#108;&#x68;&#111;&#x73;&#x74;&#x22;</a>&gt;binary类型，造成函数条款不匹配的错误，应该使用string_to_jid。</p>
 <p><img src="https://raw.githubusercontent.com/YoungWing/myimg/master/2222.png" alt="ejabberd删除好友bug"></p>
 <p>这块取消订阅是有一方取消之后，双方关系都解除，之前测试只是谁取消订阅删除谁的记录，是因为这块bug引起的，导致unsubscribe消息没有推送出去，把这块代码注释掉是为了实现半删除。</p>
 
